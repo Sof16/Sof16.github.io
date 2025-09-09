@@ -1,0 +1,162 @@
+never { /* F(a && b) && F(c && f) && F(d && e) && ((!(a || c || d)) U (g || k)) && F(h || i || j || l) */
+T0_init :    /* init */
+	if
+	:: (!a && !c && !d) -> goto T0_init
+	:: (!a && !c && !d && j) || (!a && !c && !d && h) || (!a && !c && !d && i) || (!a && !c && !d && l) -> goto T0_S2
+	:: (g) || (k) -> goto T0_S3
+	:: (g && j) || (g && h) || (g && i) || (g && l) || (k && j) || (k && h) || (k && i) || (k && l) -> goto T0_S4
+	:: (d && e && g) || (d && e && k) -> goto T0_S5
+	:: (d && e && g && j) || (d && e && g && h) || (d && e && g && i) || (d && e && g && l) || (d && e && k && j) || (d && e && k && h) || (d && e && k && i) || (d && e && k && l) -> goto T0_S6
+	:: (c && f && g) || (c && f && k) -> goto T0_S7
+	:: (c && f && g && j) || (c && f && g && h) || (c && f && g && i) || (c && f && g && l) || (c && f && k && j) || (c && f && k && h) || (c && f && k && i) || (c && f && k && l) -> goto T0_S8
+	:: (c && f && d && e && g) || (c && f && d && e && k) -> goto T0_S9
+	:: (c && f && d && e && g && j) || (c && f && d && e && g && h) || (c && f && d && e && g && i) || (c && f && d && e && g && l) || (c && f && d && e && k && j) || (c && f && d && e && k && h) || (c && f && d && e && k && i) || (c && f && d && e && k && l) -> goto T0_S10
+	:: (a && b && g) || (a && b && k) -> goto T1_S11
+	:: (a && b && g && j) || (a && b && g && h) || (a && b && g && i) || (a && b && g && l) || (a && b && k && j) || (a && b && k && h) || (a && b && k && i) || (a && b && k && l) -> goto T1_S12
+	:: (a && b && d && e && g) || (a && b && d && e && k) -> goto T1_S13
+	:: (a && b && d && e && g && j) || (a && b && d && e && g && h) || (a && b && d && e && g && i) || (a && b && d && e && g && l) || (a && b && d && e && k && j) || (a && b && d && e && k && h) || (a && b && d && e && k && i) || (a && b && d && e && k && l) -> goto T1_S14
+	:: (a && b && c && f && g) || (a && b && c && f && k) -> goto T2_S15
+	:: (a && b && c && f && g && j) || (a && b && c && f && g && h) || (a && b && c && f && g && i) || (a && b && c && f && g && l) || (a && b && c && f && k && j) || (a && b && c && f && k && h) || (a && b && c && f && k && i) || (a && b && c && f && k && l) -> goto T2_S16
+	:: (a && b && c && f && d && e && g) || (a && b && c && f && d && e && k) -> goto T4_S17
+	:: (a && b && c && f && d && e && g && j) || (a && b && c && f && d && e && g && h) || (a && b && c && f && d && e && g && i) || (a && b && c && f && d && e && g && l) || (a && b && c && f && d && e && k && j) || (a && b && c && f && d && e && k && h) || (a && b && c && f && d && e && k && i) || (a && b && c && f && d && e && k && l) -> goto accept_all
+	fi;
+T0_S2 :    /* 1 */
+	if
+	:: (!a && !c && !d) -> goto T0_S2
+	:: (g) || (k) -> goto T0_S4
+	:: (d && e && g) || (d && e && k) -> goto T0_S6
+	:: (c && f && g) || (c && f && k) -> goto T0_S8
+	:: (c && f && d && e && g) || (c && f && d && e && k) -> goto T0_S10
+	:: (a && b && g) || (a && b && k) -> goto T1_S12
+	:: (a && b && d && e && g) || (a && b && d && e && k) -> goto T1_S14
+	:: (a && b && c && f && g) || (a && b && c && f && k) -> goto T2_S16
+	:: (a && b && c && f && d && e && g) || (a && b && c && f && d && e && k) -> goto accept_all
+	fi;
+T0_S3 :    /* 2 */
+	if
+	:: (1) -> goto T0_S3
+	:: (j) || (h) || (i) || (l) -> goto T0_S4
+	:: (d && e) -> goto T0_S5
+	:: (d && e && j) || (d && e && h) || (d && e && i) || (d && e && l) -> goto T0_S6
+	:: (c && f) -> goto T0_S7
+	:: (c && f && j) || (c && f && h) || (c && f && i) || (c && f && l) -> goto T0_S8
+	:: (c && f && d && e) -> goto T0_S9
+	:: (c && f && d && e && j) || (c && f && d && e && h) || (c && f && d && e && i) || (c && f && d && e && l) -> goto T0_S10
+	:: (a && b) -> goto T1_S11
+	:: (a && b && j) || (a && b && h) || (a && b && i) || (a && b && l) -> goto T1_S12
+	:: (a && b && d && e) -> goto T1_S13
+	:: (a && b && d && e && j) || (a && b && d && e && h) || (a && b && d && e && i) || (a && b && d && e && l) -> goto T1_S14
+	:: (a && b && c && f) -> goto T2_S15
+	:: (a && b && c && f && j) || (a && b && c && f && h) || (a && b && c && f && i) || (a && b && c && f && l) -> goto T2_S16
+	:: (a && b && c && f && d && e) -> goto T4_S17
+	:: (a && b && c && f && d && e && j) || (a && b && c && f && d && e && h) || (a && b && c && f && d && e && i) || (a && b && c && f && d && e && l) -> goto accept_all
+	fi;
+T0_S4 :    /* 3 */
+	if
+	:: (1) -> goto T0_S4
+	:: (d && e) -> goto T0_S6
+	:: (c && f) -> goto T0_S8
+	:: (c && f && d && e) -> goto T0_S10
+	:: (a && b) -> goto T1_S12
+	:: (a && b && d && e) -> goto T1_S14
+	:: (a && b && c && f) -> goto T2_S16
+	:: (a && b && c && f && d && e) -> goto accept_all
+	fi;
+T0_S5 :    /* 4 */
+	if
+	:: (1) -> goto T0_S5
+	:: (j) || (h) || (i) || (l) -> goto T0_S6
+	:: (c && f) -> goto T0_S9
+	:: (c && f && j) || (c && f && h) || (c && f && i) || (c && f && l) -> goto T0_S10
+	:: (a && b) -> goto T1_S13
+	:: (a && b && j) || (a && b && h) || (a && b && i) || (a && b && l) -> goto T1_S14
+	:: (a && b && c && f) -> goto T4_S17
+	:: (a && b && c && f && j) || (a && b && c && f && h) || (a && b && c && f && i) || (a && b && c && f && l) -> goto accept_all
+	fi;
+T0_S6 :    /* 5 */
+	if
+	:: (1) -> goto T0_S6
+	:: (c && f) -> goto T0_S10
+	:: (a && b) -> goto T1_S14
+	:: (a && b && c && f) -> goto accept_all
+	fi;
+T0_S7 :    /* 6 */
+	if
+	:: (1) -> goto T0_S7
+	:: (j) || (h) || (i) || (l) -> goto T0_S8
+	:: (d && e) -> goto T0_S9
+	:: (d && e && j) || (d && e && h) || (d && e && i) || (d && e && l) -> goto T0_S10
+	:: (a && b) -> goto T2_S15
+	:: (a && b && j) || (a && b && h) || (a && b && i) || (a && b && l) -> goto T2_S16
+	:: (a && b && d && e) -> goto T4_S17
+	:: (a && b && d && e && j) || (a && b && d && e && h) || (a && b && d && e && i) || (a && b && d && e && l) -> goto accept_all
+	fi;
+T0_S8 :    /* 7 */
+	if
+	:: (1) -> goto T0_S8
+	:: (d && e) -> goto T0_S10
+	:: (a && b) -> goto T2_S16
+	:: (a && b && d && e) -> goto accept_all
+	fi;
+T0_S9 :    /* 8 */
+	if
+	:: (1) -> goto T0_S9
+	:: (j) || (h) || (i) || (l) -> goto T0_S10
+	:: (a && b) -> goto T4_S17
+	:: (a && b && j) || (a && b && h) || (a && b && i) || (a && b && l) -> goto accept_all
+	fi;
+T0_S10 :    /* 9 */
+	if
+	:: (1) -> goto T0_S10
+	:: (a && b) -> goto accept_all
+	fi;
+T1_S11 :    /* 10 */
+	if
+	:: (1) -> goto T1_S11
+	:: (j) || (h) || (i) || (l) -> goto T1_S12
+	:: (d && e) -> goto T1_S13
+	:: (d && e && j) || (d && e && h) || (d && e && i) || (d && e && l) -> goto T1_S14
+	:: (c && f) -> goto T2_S15
+	:: (c && f && j) || (c && f && h) || (c && f && i) || (c && f && l) -> goto T2_S16
+	:: (c && f && d && e) -> goto T4_S17
+	:: (c && f && d && e && j) || (c && f && d && e && h) || (c && f && d && e && i) || (c && f && d && e && l) -> goto accept_all
+	fi;
+T1_S12 :    /* 11 */
+	if
+	:: (1) -> goto T1_S12
+	:: (d && e) -> goto T1_S14
+	:: (c && f) -> goto T2_S16
+	:: (c && f && d && e) -> goto accept_all
+	fi;
+T1_S13 :    /* 12 */
+	if
+	:: (1) -> goto T1_S13
+	:: (j) || (h) || (i) || (l) -> goto T1_S14
+	:: (c && f) -> goto T4_S17
+	:: (c && f && j) || (c && f && h) || (c && f && i) || (c && f && l) -> goto accept_all
+	fi;
+T1_S14 :    /* 13 */
+	if
+	:: (1) -> goto T1_S14
+	:: (c && f) -> goto accept_all
+	fi;
+T2_S15 :    /* 14 */
+	if
+	:: (1) -> goto T2_S15
+	:: (j) || (h) || (i) || (l) -> goto T2_S16
+	:: (d && e) -> goto T4_S17
+	:: (d && e && j) || (d && e && h) || (d && e && i) || (d && e && l) -> goto accept_all
+	fi;
+T2_S16 :    /* 15 */
+	if
+	:: (1) -> goto T2_S16
+	:: (d && e) -> goto accept_all
+	fi;
+T4_S17 :    /* 16 */
+	if
+	:: (1) -> goto T4_S17
+	:: (j) || (h) || (i) || (l) -> goto accept_all
+	fi;
+accept_all :    /* 17 */
+	skip
+}

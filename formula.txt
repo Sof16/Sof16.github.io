@@ -1,0 +1,22 @@
+https://spot.lre.epita.fr/app/
+
+
+(F h & F i & Fj & F k & F l & F g) & ((!(a | b)) U (a & b) )& ((!(c | f)) U (c&f)) &  ((!(d | e)) U (d&e))
+
+Deterministic automaton with 512 states and 19683 edges.
+
+Opción completo: Deterministic automaton with 513 states and 20132 edges.
+
+
+((!(a | b)) U (a & b) )& ((!(c | f)) U (c&f)) &  ((!(d | e)) U (d&e))
+Deterministic automaton with 8 states and 27 edges.
+
+
+ Los dos ejemplos siguientes muestran que considerar muchas variables aumenta exponencialmente el tamaño del autómata.
+ Conclusión: el ejemplo debe considerar muchas menos observaciones
+
+((!(a | b)) U (a & b) )& ((!(c | f)) U (c&f)) &  ((!(d | e)) U (d&e&g))
+Deterministic automaton with 8 states and 27 edges.
+
+F h & F i & ((!(a | b)) U (a & b) )& ((!(c | f)) U (c&f)) &  ((!(d | e)) U (d&e&h))
+Deterministic automaton with 16 states and 81 edges
