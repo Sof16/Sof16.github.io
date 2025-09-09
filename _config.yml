@@ -1,6 +1,8 @@
 title: Motion Planning with Renew
 description: Simulation guide of the research work conducted in the paper "Multi-robot Motion Planning based on Nets-within-Nets Modeling and Simulation"
 theme: just-the-docs
+plugins:
+    - jekyll-default-layout
 
 url: https://Sof16.github.io/MotionPlanningNwN
 
