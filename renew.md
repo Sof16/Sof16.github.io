@@ -20,7 +20,7 @@ Please refer to the [Renew Installation window](../renew.html).
 
 [Please click here to access the files on Github](https://github.com/eva-robillard/NwN_simple).
 
-### Step 3 : Open the example on Renew
+### Step 3 : Open the example in Renew
 
 The procedure for the launching on the example in Renew is:
 
