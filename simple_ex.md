@@ -41,7 +41,7 @@ Thus, the atomic proposition for $c$ is evaluated as **True**. The last paramete
 
 ---
 
-**Remark 7.1.** In the implementation, there are two Renew models for these two types of robots:  
+**Remark.** In the implementation, there are two Renew models for these two types of robots:  
 
 - Since $r_1$ and $r_2$ have the same spatial constraints, a single RobotOPN model is sufficient, including all 5 places.  
 - For $r_3$, the RobotOPN model includes only 4 places, excluding the overlapped region modeled by $p2$.  
