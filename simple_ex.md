@@ -1,10 +1,10 @@
 ---
-title: Simple Example
+title: Example in Renew
 layout: default
 nav_order: 3
 ---
 
-# Presentation of the simple example
+# Example in Renew
 
 **Renew Models for RobotOPN and SpecOPN**
 
