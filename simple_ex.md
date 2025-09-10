@@ -21,7 +21,7 @@ Additionally, the symbols $\neg$ and $\wedge$ are replaced in Renew with the syn
 
 <img src="images/RobotOPN_RenewImplementation2.png" alt="Examples of the RobotOPN models in Renew" width="600"/>
 
-**Figure 1.** Examples of the RobotOPN models in Renew: Robots $r_1$ and $r_2$ are free to move throughout the workspace. Robot $r_3$ is prohibited from entering the overlapping area between $y_2$ and $y_3$ (excluding the red places and transitions).  
+**Figure 1.** Examples of the RobotOPN models in Renew: Robots $r_1$ `qpn_robot` and $r_2$ `qpn_robot_2` are free to move throughout the workspace. Robot $r_3$ is prohibited from entering the overlapping area between $y_2$ and $y_3$ (excluding the red places and transitions).  
 
 ---
 
