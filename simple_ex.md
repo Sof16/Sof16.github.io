@@ -6,7 +6,7 @@ nav_order: 3
 
 # Presentation of the simple example
 
-** Renew Models for RobotOPN and SpecOPN **
+**Renew Models for RobotOPN and SpecOPN**
 
 Let us recall the formal notation of the sets of regions of interest  
 $\mathcal{Y} = \{y_1, y_2, \dots y_{|Y|}\}$, respectively of atomic propositions  
