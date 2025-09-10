@@ -21,7 +21,7 @@ Her research interests include path planning and task assignment for multi-agent
 She is also a teaching assistant at the Technical University of Iasi, Romania, where she teaches **System Theory** and **Path Planning Strategies for Multi-Agent Systems**.
 
 ---
-<img src="images/ezpeleta.jpg" alt="Joaquín Ezpeleta" width="200"/>
+<img src="images/ezpeleta.png" alt="Joaquín Ezpeleta" width="200"/>
 
 **Joaquín Ezpeleta**  
 Attained both his M.S. degree in Mathematics and his Ph.D. in Computer Science from the University of Zaragoza, Spain.  
@@ -30,7 +30,7 @@ Currently, he is a Full Professor in the Department of Computer Science and Syst
 
 ---
 
-<img src="images/cristian_mahulea.jpg" alt="Cristian Mahulea" width="200"/>
+<img src="images/cristian_mahulea.png" alt="Cristian Mahulea" width="200"/>
 
 **Cristian Mahulea**  
 Received his B.S. and M.Sc. degrees in Control Engineering from the Technical University of Iasi, Romania, in 2001 and 2002, respectively, and his Ph.D. in Systems Engineering from the University of Zaragoza, Spain, in 2007.  
