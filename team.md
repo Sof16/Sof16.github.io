@@ -7,7 +7,9 @@ nav_order: 6
 # The Team 
 
 
-![Sofia Hustiu](hustiu_photo.jpg)
+
+
+<img src="images/hustiu_photo.jpg" alt="Sofia Hustiu" width="200"/>
 
 **Sofia Hustiu**  
 Received the B.S. and M.Sc. degrees in Automatic Control and Applied Informatics from the Technical University of Iasi, Romania, in 2018 and 2020, respectively.  
@@ -18,10 +20,8 @@ Her research interests include path planning and task assignment for multi-agent
 
 She is also a teaching assistant at the Technical University of Iasi, Romania, where she teaches **System Theory** and **Path Planning Strategies for Multi-Agent Systems**.
 
-
 ---
-
-![Joaquín Ezpeleta](images/ezpeleta.jpg)
+<img src="images/ezpeleta.jpg" alt="Joaquín Ezpeleta" width="200"/>
 
 **Joaquín Ezpeleta**  
 Attained both his M.S. degree in Mathematics and his Ph.D. in Computer Science from the University of Zaragoza, Spain.  
@@ -30,7 +30,7 @@ Currently, he is a Full Professor in the Department of Computer Science and Syst
 
 ---
 
-![Cristian Mahulea](images/cristian_mahulea.jpg)
+<img src="images/cristian_mahulea.jpg" alt="Cristian Mahulea" width="200"/>
 
 **Cristian Mahulea**  
 Received his B.S. and M.Sc. degrees in Control Engineering from the Technical University of Iasi, Romania, in 2001 and 2002, respectively, and his Ph.D. in Systems Engineering from the University of Zaragoza, Spain, in 2007.  
@@ -43,7 +43,7 @@ Cristian has served as an Associate Editor for *IEEE Transactions on Automation 
 
 ---
 
-![Marius Kloetzer](images/Kloetzer_photo.jpg)
+<img src="images/Kloetzer_photo.jpg" alt="Marius Kloetzer" width="200"/>
 
 **Marius Kloetzer**  
 Received the B.S. and M.Sc. degrees in Computer Science from the Technical University of Iasi, Romania, in 2002 and 2003, respectively, and the Ph.D. degree in Systems Engineering from Boston University, MA, USA, in 2008.  
@@ -51,6 +51,9 @@ Received the B.S. and M.Sc. degrees in Computer Science from the Technical Unive
 He is currently a Full Professor at the Technical University of Iasi, Romania. His research interests include formal tools for discrete event systems with applications in motion planning for mobile robots.  
 
 Marius Kloetzer was a Visiting Researcher at Ghent University, Belgium, and at the University of Zaragoza, Spain. He has also served as Organizing Committee Chair at ICSTCC 2017 and Work-in-Progress Co-Chair at ETFA 2019.
+
+---
+
 
 
 # Contact information
