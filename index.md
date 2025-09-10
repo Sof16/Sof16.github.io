@@ -24,6 +24,6 @@ Illustrative examples based on Linear Temporal Logic missions support the comput
 
 # Github project links
 
-Our work can be accessed on GitHub: https://github.com/Sof16/Sof16.github.io
+Our work can be accessed on [GitHub](https://github.com/Sof16/Sof16.github.io)
 
 
