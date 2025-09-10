@@ -43,7 +43,7 @@ Cristian has served as an Associate Editor for *IEEE Transactions on Automation 
 
 ---
 
-<img src="images/Kloetzer_photo.jpg" alt="Marius Kloetzer" width="200"/>
+<img src="images/kloetzer_photo.jpg" alt="Marius Kloetzer" width="200"/>
 
 **Marius Kloetzer**  
 Received the B.S. and M.Sc. degrees in Computer Science from the Technical University of Iasi, Romania, in 2002 and 2003, respectively, and the Ph.D. degree in Systems Engineering from Boston University, MA, USA, in 2008.  
