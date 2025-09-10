@@ -1,0 +1,4 @@
+States: [T0_init, accept_all]
+Initial State: T0_init
+Accepting States: [accept_all]
+Transitions={T0_init={T0_init=[1], accept_all=[y1 || y2]}}

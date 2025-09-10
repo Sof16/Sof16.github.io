@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<pnml xmlns="http://www.pnml.org/version-2009/grammar/pnml">
+  <net id="buchi_automaton" type="RefNet">
+    <place id="p1">
+      <initialMarking>
+         <text>[]</text>
+      </initialMarking>
+      <name>
+         <graphics>
+            <offset x="15" y="15"/>
+         </graphics>
+         <text>T0_init</text>
+      </name>
+    </place>
+    <place id="p2">
+      <name>
+         <graphics>
+            <offset x="15" y="15"/>
+         </graphics>
+         <text>accept_all</text>
+      </name>
+    </place>
+    <transition id="t3">
+      <graphics>
+         <position x="0" y="0"/>
+         <dimension x="20" y="20"/>
+         <fill color="rgb(112,219,147)"/>
+         <line color="rgb(0,0,0)"/>
+      </graphics>
+      <uplink>
+         <graphics>
+            <offset x="0" y="-18"/>
+         </graphics>
+         <text>:b("1")</text>
+      </uplink>
+    </transition>
+    <arc id="a0" source="p1" target="t3"/>
+    <arc id="a1" source="t3" target="p1"/>
+    <transition id="t4">
+      <graphics>
+         <position x="0" y="0"/>
+         <dimension x="20" y="20"/>
+         <fill color="rgb(112,219,147)"/>
+         <line color="rgb(0,0,0)"/>
+      </graphics>
+      <uplink>
+         <graphics>
+            <offset x="0" y="-18"/>
+         </graphics>
+         <text>:b("y1")</text>
+      </uplink>
+    </transition>
+    <arc id="a2" source="p1" target="t4"/>
+    <arc id="a3" source="t4" target="p2"/>
+    <transition id="t5">
+      <graphics>
+         <position x="0" y="0"/>
+         <dimension x="20" y="20"/>
+         <fill color="rgb(112,219,147)"/>
+         <line color="rgb(0,0,0)"/>
+      </graphics>
+      <uplink>
+         <graphics>
+            <offset x="0" y="-18"/>
+         </graphics>
+         <text>:b("y2")</text>
+      </uplink>
+    </transition>
+    <arc id="a4" source="p1" target="t5"/>
+    <arc id="a5" source="t5" target="p2"/>
+    <transition id="t6">
+      <graphics>
+         <position x="0" y="0"/>
+         <dimension x="20" y="20"/>
+         <fill color="rgb(219,112,219)"/>
+         <line color="rgb(0,0,0)"/>
+      </graphics>
+      <uplink>
+         <graphics>
+            <offset x="0" y="-18"/>
+         </graphics>
+         <text>:end()</text>
+      </uplink>
+    </transition>
+    <arc id="a6" source="p2" target="t6"/>
+  </net>
+</pnml>
