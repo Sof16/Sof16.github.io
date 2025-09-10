@@ -1,33 +1,33 @@
 ---
-title: Your Own Example
+title: Additional steps
 layout: default
-nav_order: 5
+nav_order: 4
 ---
 
-# What are the steps for testing out your own example with our model ? 
+# Additional steps 
 
 ## Create a Specification Net from your LTL global mission.
 
-This can be done by abiding by the following steps:
+### Option 1
 
-1. Translate your LTL formula into a Büchi automaton using the [SPOT software](https://spot.lre.epita.fr). 
-2. Save the automaton with an .never type extension.
-3. Change the extension to .hoa by using the ["autfilt" tool of the SPOT software](https://spot.lre.epita.fr/autfilt.html):
-```
-autfilt NameOfTheFile.never > NameOfTheFile.hoa
-```
-5. Go into the folder that holds the folder hoa2pnml. This folder can also be found in [this repository](https://github.com/eva-robillard/NWN_Complex).
-6. Open the Powershell there.
-7. Write this command line :
+The $SpecOPN$ model can be represented directly by the user in the Renew tool. However, for complex missions, manual design is difficult to build.  
 
-```
-java -jar hoa2pnml.jar NameOfTheHoaFile (without adding the extension .hoa)
-```
-The .hoa file is now a .pnml model visible by Renew.
+Thus, Renew provides a feature to express any LTL mission as a Petri net model in a file with extension `.rnw`, which can then be used for experiments in the *High-Level robotic team Petri net* framework.  
 
-## Robot nets
+A list of steps to generate a `SpecOPN` model from an LTL mission is provided below:
 
-The model of the robot nets is introduced in the paper through different examples. 
+1. Translate the given LTL mission into a Büchi automaton using any model-checking tool ([Spot](https://spot.lre.epita.fr/), Gastin et al., 2001).  
+2. Copy the detailed representation of the automaton into a file and save it with the extension `.never`.  
+3. Convert the `.never` file to a `.hoa` file using the `autfilt` tool from SPOT.  
+   - The `autfilt` tool can be accessed here: [https://spot.lre.epita.fr/autfilt.html](https://spot.lre.epita.fr/autfilt.html).  
+   - Run in the command line:  
+     ```bash
+     autfilt NameOfTheFile.never > NameOfTheFile.hoa
+     ```
+4. Open a terminal in the `hoa2pnml` folder (from relevant references) and run:  
+   ```bash
+   java -jar hoa2pnml.jar NameOfTheHoaFile
 
+### Option 2
 
 
