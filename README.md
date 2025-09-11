@@ -13,3 +13,28 @@ Then, the solution is found by simulating the HLrtPN system in a specific softwa
 Illustrative examples based on Linear Temporal Logic missions support the computational feasibility of the proposed framework.
 
 More examples can be found on: https://sof16.github.io/
+
+
+# Process to run a simulation
+
+### Step 1 : Download the simulation software Renew
+
+Please refer to the [Renew Installation window](../renew.html).
+
+### Step 2 : Download the example files
+
+[Please click here to access the files on Github](https://github.com/Sof16/Sof16.github.io).
+
+### Step 3 : Open the example in Renew
+
+The procedure for the launching on the example in Renew is:
+
+1. Open the Powershell in the directory with the example files, containing the Java script Eval.java.
+2. Execute "javac Eval.java" in the Powershell
+3. Open Renew from the Powershell ( type in the path of the directory containing the Renew software adding \renew ) 
+4. In Renew, open all the files with the extension .rnw --> path to renew/loader *.rnw
+
+### Step 4 : Simulate
+
+Open the file execute_experiment.rnw
+Simulate Step by Step (Ctrl+I) or completely (Ctrl+R)
